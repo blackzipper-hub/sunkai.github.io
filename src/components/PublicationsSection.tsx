@@ -1,41 +1,17 @@
 const publications = [
   {
+    year: "2025-2026",
+    title: "CartoonBench: A Dedicated Benchmark for Cartoon I2V Evaluation",
+    venue: "Under Submission (ICML)",
+    authors: "Co-first author · HKUST",
+    highlight: true,
+    link: "https://animationbench.github.io/",
+  },
+  {
     year: "2025",
-    title: "Towards Robust Multimodal Reasoning in Large Language Models",
-    venue: "NeurIPS 2025",
-    authors: "Your Name, Collaborator A, Collaborator B",
-    highlight: true,
-    link: "#",
-  },
-  {
-    year: "2024",
-    title: "Efficient Fine-tuning Strategies for Domain-Specific Language Models",
-    venue: "ICML 2024",
-    authors: "Your Name, Collaborator C, Collaborator D",
-    highlight: true,
-    link: "#",
-  },
-  {
-    year: "2024",
-    title: "A Survey on Trustworthy AI: From Principles to Practice",
-    venue: "ACM Computing Surveys",
-    authors: "Collaborator A, Your Name, Collaborator E",
-    highlight: false,
-    link: "#",
-  },
-  {
-    year: "2023",
-    title: "Self-Supervised Visual Representation Learning with Contrastive Objectives",
-    venue: "CVPR 2023",
-    authors: "Your Name, Collaborator F",
-    highlight: true,
-    link: "#",
-  },
-  {
-    year: "2023",
-    title: "Reinforcement Learning from Human Feedback: A Comprehensive Study",
-    venue: "AAAI 2023",
-    authors: "Collaborator B, Your Name, Collaborator G",
+    title: "SoR: Skeleton-of-RAG Framework",
+    venue: "Under Submission (ACL)",
+    authors: "First author · SCUT",
     highlight: true,
     link: "#",
   },
@@ -47,7 +23,7 @@ const PublicationsSection = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="font-display text-4xl font-bold text-foreground mb-4">
-            Selected <span className="text-gold">Publications</span>
+            Selected <span className="text-gold">Works</span>
           </h2>
           <div className="w-16 h-1 bg-gold mx-auto rounded-full" />
         </div>

@@ -1,26 +1,26 @@
 const researchAreas = [
   {
     icon: "🧠",
-    title: "Large Language Models",
-    description: "Advancing the capabilities and safety of foundation models through novel training and alignment techniques.",
+    title: "Multimodal LLM",
+    description: "Designing multimodal language model methods that better connect perception, generation, and reasoning.",
     color: "from-primary/10 to-teal-soft",
   },
   {
     icon: "👁️",
-    title: "Multimodal Learning",
-    description: "Building systems that perceive, understand, and reason across text, images, and structured data.",
+    title: "Image and Video Generation",
+    description: "Building practical generation pipelines and evaluation methods for controllable and high-fidelity visual content.",
     color: "from-gold/10 to-secondary",
   },
   {
-    icon: "🛡️",
-    title: "Trustworthy AI",
-    description: "Developing robust, fair, and interpretable AI systems that humans can understand and trust.",
+    icon: "🌍",
+    title: "World Model",
+    description: "Exploring model design for temporal understanding and simulation to support richer downstream generation tasks.",
     color: "from-teal-light/20 to-muted",
   },
   {
-    icon: "🔬",
-    title: "AI for Science",
-    description: "Leveraging machine learning to accelerate scientific discovery in biomedicine and materials science.",
+    icon: "⚙️",
+    title: "Downstream AIGC Applications",
+    description: "Turning research into usable systems by integrating model capabilities into real product workflows.",
     color: "from-secondary to-primary/5",
   },
 ];
@@ -31,11 +31,11 @@ const ResearchSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="font-display text-4xl font-bold text-foreground mb-4">
-            Research <span className="text-gold">Directions</span>
+            Research <span className="text-gold">Focus</span>
           </h2>
           <div className="w-16 h-1 bg-gold mx-auto rounded-full" />
           <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-            My research aims to push the boundaries of AI while ensuring its safe and beneficial deployment.
+            I focus on multimodal generation and reasoning systems, from benchmark design to practical product-facing workflows.
           </p>
         </div>
 

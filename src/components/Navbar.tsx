@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 
 const navItems = [
   { label: "About", href: "#about" },
-  { label: "Research", href: "#research" },
   { label: "Publications", href: "#publications" },
+  { label: "HCI - Project", href: "#hci-project" },
   { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+  { label: "Profile", href: "#contact" },
 ];
 
 const Navbar = () => {
@@ -33,7 +33,7 @@ const Navbar = () => {
             scrolled ? "text-primary" : "text-primary-foreground"
           }`}
         >
-          YourName
+          Sunkai
         </a>
 
         {/* Desktop */}

@@ -1,16 +1,23 @@
 const educationData = [
-  { degree: "Ph.D. in Computer Science", school: "University Name", year: "2022 – Present", focus: "AI / Machine Learning" },
-  { degree: "M.S. in Computer Science", school: "University Name", year: "2020 – 2022", focus: "Deep Learning" },
-  { degree: "B.S. in Computer Science", school: "University Name", year: "2016 – 2020", focus: "Software Engineering" },
+  {
+    degree: "MSc in Computer Science and Engineering",
+    school: "The Hong Kong University of Science and Technology (HKUST)",
+    year: "2025 - Present",
+    focus: "Advisor: Prof. Qifeng Chen",
+  },
+  {
+    degree: "BEng in Software Engineering",
+    school: "South China University of Technology (SCUT)",
+    year: "Graduated in 2025",
+    focus: "Software Engineering",
+  },
 ];
 
-const interests = [
-  "Large Language Models",
-  "Multimodal Learning",
-  "Trustworthy AI",
-  "Computer Vision",
-  "Reinforcement Learning",
-  "AI for Science",
+const researchFocus = [
+  "Multimodal LLM",
+  "Image & Video Generation",
+  "World Model",
+  "Downstream AIGC Applications",
 ];
 
 const AboutSection = () => {
@@ -47,28 +54,31 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Research Interests */}
+          {/* Introduction + Research Focus Card */}
           <div className="animate-on-scroll" style={{ transitionDelay: "0.15s" }}>
             <h3 className="font-display text-2xl font-semibold text-foreground mb-6 flex items-center gap-3">
-              <span className="text-gold text-2xl">🔬</span> Research Interests
+              <span className="text-gold text-2xl">👋</span> Introduction
             </h3>
-            <div className="flex flex-wrap gap-3 mb-8">
-              {interests.map((tag) => (
-                <span
-                  key={tag}
-                  className="tech-tag hover:bg-gold/20 hover:text-gold hover:border-gold/30 border border-transparent transition-all duration-300 cursor-default"
-                >
-                  {tag}
-                </span>
-              ))}
+            <div className="bg-card rounded-xl p-6 border border-border card-hover mb-6">
+              <p className="text-muted-foreground leading-relaxed">
+                Hello! I am a first-year MSc student in CSE at HKUST. I work as a research assistant at Visual Intelligence Lab
+                led by under the supervision of Prof. Qifeng Chen. I was also fortunate to
+                be an internship at ByteDance, Huawei, and NewAI. My research interests lie
+                at the intersection of Multimodal LLM and Machine Learning, with a current
+                focus on novel applications for image/video generation, world models, and
+                other downstream AIGC tasks.
+              </p>
             </div>
 
-            <div className="bg-card rounded-xl p-6 border border-border card-hover">
-              <p className="text-muted-foreground leading-relaxed">
-                I am a researcher in artificial intelligence, focusing on building intelligent systems 
-                that are reliable, interpretable, and beneficial. My work spans across large language models, 
-                multimodal learning, and AI safety. I believe in open science and reproducible research.
-              </p>
+            <div className="bg-card rounded-xl p-5 border border-border card-hover">
+              <h4 className="font-semibold text-foreground mb-3">Research Focus</h4>
+              <div className="flex flex-wrap gap-2">
+                {researchFocus.map((item) => (
+                  <span key={item} className="tech-tag text-xs">
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
